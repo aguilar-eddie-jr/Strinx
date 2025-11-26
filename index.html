@@ -2,23 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="apple-touch-icon" sizes="57x57" href="./Logo/StrinxLogo 57x57.png">
+  <meta name="msapplication-TileImage" content="/Logo/StrinxLogo 144x144.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./Logo/StrinxLogo 96x96.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Logo/StrinxLogo 32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./Logo/StrinxLogo 16x16.png">
   <title>Strinx</title>
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
-
 </head>
 
 <body>
-  <!-- TOP NOTICE BAR -->
+  <!-- For Ads -->
   <aside class="topnav">
     SHIPPING NATIONWIDE | 2025 YEAR END SALE NOW | FREE DELIVERY FOR OVER ₱5000
   </aside>
 
-  <!-- MAIN NAVIGATION -->
   <nav class="main-nav">
-    <!-- First Layer -->
+    <!-- First Layer of Navigation -->
     <div class="firstlayer-nav">
       <div class="firstlayer-container">
         <div class="logo">
@@ -36,19 +39,33 @@
       </div>
     </div>
 
-    <!-- Second Layer -->
+    <!-- Second Layer  of Navigation-->
     <div class="secondlayer-nav">
       <div class="secondlayer-container">
-        <a href="#fixie">FIXIE BIKES</a>
-        <a href="#road">ROAD BIKES</a>
-        <a href="#mountain">MOUNTAIN BIKES</a>
-        <a href="#merch">MERCHANDISE</a>
-        <a href="#support">SUPPORT</a>
+
+        <ul class="nav-menu">
+          <li class="hideOnMobile"><a href="#fixie">FIXIE BIKES</a></li>
+          <li class="hideOnMobile"><a href="#road">ROAD BIKES</a></li>
+          <li class="hideOnMobile"><a href="#mountain">MOUNTAIN BIKES</a></li>
+          <li class="hideOnMobile"><a href="#merchandise">MERCHANDISE</a></li>
+          <li class="hideOnMobile"><a href="#support">SUPPORT</a></li>
+          <li class="menubutton"><a><i class="fa-solid fa-bars" onclick="showSidebar()"></i></a></li>
+        </ul>
+
+        <ul class="sidebar">
+          <li><a href="#" onclick="hideSidebar()">CLOSE MENU</a></li>
+          <li><a href="#fixie">FIXIE BIKES</a></li>
+          <li><a href="#road">ROAD BIKES</a></li>
+          <li><a href="#mountain">MOUNTAIN BIKES</a></li>
+          <li><a href="#merchandise">MERCHANDISE</a></li>
+          <li><a href="#support">SUPPORT</a></li>
+        </ul>
+
       </div>
     </div>
   </nav>
 
-  <!-- HERO HEADER -->
+  <!-- For Main Header -->
   <header class="mainheading">
     <div class="headingcontent">
       <h1>THE JOURNEY IS THE REWARD</h1>
@@ -57,9 +74,8 @@
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main>
-    <!-- ABOUT -->
+    <!-- For About -->
     <section class="about">
       <h2>THE PURSUIT OF PERFECTION</h2>
       <p>
@@ -68,7 +84,7 @@
       </p>
     </section>
 
-    <!-- FIXIE SLIDER -->
+    <!-- For Fixed Gear Bikes -->
     <section id="fixie" class="slider-section">
       <header class="section-header">
         <h2>FIXED GEAR BIKES</h2>
@@ -80,12 +96,12 @@
 
         <div class="slider-track">
 
-          <a  class="product" href="product-bmc.html">
+          <a class="product" href="product-bmc.html">
             <img src="./bikesimage/1stbikeFxd.webp" alt="BMC Trackmachine" />
             <h3>BMC Trackmachine AL ONE | Black/ white</h3>
             <p>₱150,499 PHP</p>
           </a>
-          
+
           <a class="product" href="#">
             <img src="./bikesimage/2ndbikeFxd.webp" alt="LOOK Track Bike" />
             <h3>LOOK 875 Madison RS | Proteam Black Glossy</h3>
@@ -99,7 +115,7 @@
           </a>
 
           <a class="product" href="#">
-            <img src="./bikesimage/4thbikeFxd.webp" alt="DOLAN DF4 Carbon Track Bike image " />
+            <img src="./bikesimage/4thbikeFxd.webp" alt="DOLAN DF4 Carbon Track Bike image" />
             <h3>DOLAN DF4 Carbon Track - ALPINA-SE | Matt Black/White</h3>
             <p>₱155,999 PHP</p>
           </a>
@@ -109,7 +125,7 @@
       </div>
     </section>
 
-    <!-- ROAD SLIDER -->
+    <!-- For Road Bikes-->
     <section id="road" class="slider-section">
       <header class="section-header">
         <h2>ROAD BIKES</h2>
@@ -140,7 +156,7 @@
 
           <a class="product" href="#">
             <img src="./bikesimage/road4img.webp" alt="Bianchi OLTRE RC Founder Edition image" />
-            <h3>Bianchi OLTRE RC Founder Edition | 01 - Celeste Spectrum </h3>
+            <h3>Bianchi OLTRE RC Founder Edition | 01 - Celeste Spectrum</h3>
             <p>₱105,999 PHP</p>
           </a>
         </div>
@@ -149,7 +165,7 @@
       </div>
     </section>
 
-    <!-- MOUNTAIN SLIDER -->
+    <!-- For Mountain Bike -->
     <section id="mountain" class="slider-section">
       <header class="section-header">
         <h2>MOUNTAIN BIKES</h2>
@@ -172,13 +188,13 @@
             <p>₱199,049 PHP</p>
           </a>
 
-           <a class="product" href="#">
+          <a class="product" href="#">
             <img src="./bikesimage/mtb3img.webp" alt="BIANCHI METHANOL CV FS 9.3 image" />
             <h3>BIANCHI METHANOL CV FS 9.3 | Celeste CK16</h3>
             <p>₱195,049 PHP</p>
           </a>
 
-           <a class="product" href="#">
+          <a class="product" href="#">
             <img src="./bikesimage/mtb4thimg.webp" alt="Trek Procaliber 9.7 AXS Gen 3" />
             <h3>Trek Procaliber 9.7 AXS Gen 3 | Carbon Red Smoke</h3>
             <p>₱140,049 PHP</p>
@@ -188,94 +204,60 @@
         <button class="arrow right">&#10217</button>
       </div>
     </section>
+
   </main>
 
-  <!-- MERCH HEADER -->
-  <section class="merch-header">
+  <!-- For Merchandise Header -->
+  <section id="merchandise" class="merch-header">
     <h2>MERCHANDISE</h2>
   </section>
 
-  <!-- MERCH HERO -->
-  <section class="hero">
-    <img src="./images/backgroundmerchants.webp" alt="Merch Background" class="hero-img" />
+  <!-- For Merch -->
+  <section class="merch-section">
+    <img src="./images/backgroundmerchants.webp" alt="Merchandise Background" class="merch-img" />
 
-    <div class="hero-content">
+    <div class="merch-content">
       <h2>COLLECTION</h2>
       <p>
         Discover our exclusive collection crafted for style, comfort, and individuality.
-        From streetwear staples to urban-inspired pieces, we’ve got the perfect fit for your vibe.
+        From streetwear staples to urban-inspired pieces, we've got the perfect fit for your vibe.
       </p>
       <a href="#" class="btn">SHOP MERCH</a>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- For Footer -->
   <footer class="footer">
     <section class="footer-top">
-      <article>
+      <article id="support">
         <h2>Support</h2>
         <p>
-          Need help with merch or brand updates? We’ve got you. Reach<br>out through our socials, we’re always here for the crew.
+          Need help with merch or brand updates? We've got you. Reach<br>out through our socials, we're always here for the crew.
         </p>
       </article>
 
       <article>
         <h2>Send us a message</h2>
         <p>
-          Email: <a href="mailto:strinxbikes@gmail.com">strinxbikes@gmail.com</a><br />
-          Tel: 09481361494
+          Email: <a href="mailto:aguilareddie2323@gmail.com">aguilareddie2323@gmail.com</a><br />
+          Tel: <a href="tel:+09947420066">0994-742-0066</a>
         </p>
       </article>
     </section>
 
     <section class="footer-bottom">
       <p class="copyright">
-        © Copyright 2025, Strinx Bikes. All rights reserved |
-        Powered by Aguilar Jr. Eddie P.
+        © Copyright 2025, Strinx Bikes. All rights reserved | Powered by Aguilar Jr. Eddie P.
       </p>
 
       <address class="store">
         <img src="./images/Main LOGO S white.svg" alt="Strinx Logo" />
-        <p>
-          Shop Location: Jade Residences BLK<br />
-          1B LOT 33 Florence St, Malagasang<br />
-          1-D, Imus, Cavite
-        </p>
+        <p>Shop Location: Jade Residences BLK<br>1B LOT 33 Florence St, Malagasang<br>1-D, Imus, Cavite</p>
       </address>
     </section>
   </footer>
 
-  <!-- SCRIPT -->
-  <script>
-      document.querySelectorAll('.slider-container').forEach((slider) => {
-      const track = slider.querySelector('.slider-track');
-      const prevBtn = slider.querySelector('.arrow.left');
-      const nextBtn = slider.querySelector('.arrow.right');
-      const products = track.querySelectorAll('.product');
-
-      let index = 0;
-      const visibleItems = 3;
-      const totalItems = products.length;
-
-      function updateSlider() {
-        const offset = -(index * (100 / visibleItems));
-        track.style.transform = `translateX(${offset}%)`;
-      }
-
-      nextBtn.addEventListener('click', () => {
-        if (index < totalItems - visibleItems) {
-          index++;
-          updateSlider();
-        }
-      });
-
-      prevBtn.addEventListener('click', () => {
-        if (index > 0) {
-          index--;
-          updateSlider();
-        }
-      });
-    });
-  </script>
+  <!-- for the javascript -->
+  <script src="script.js"></script>
 </body>
 </html>
