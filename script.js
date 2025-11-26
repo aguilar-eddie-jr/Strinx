@@ -1,4 +1,5 @@
-      document.querySelectorAll('.slider-container').forEach((slider) => {
+// For Product Slider
+     document.querySelectorAll('.slider-container').forEach((slider) => {
       const track = slider.querySelector('.slider-track');
       const prevBtn = slider.querySelector('.arrow.left');
       const nextBtn = slider.querySelector('.arrow.right');
@@ -8,19 +9,19 @@
       let visibleItems = getVisibleItems();
       const totalItems = products.length;
 
-  // Detect screen size and adjust visible items
+  // 
       function getVisibleItems() {
         if (window.innerWidth <= 500) return 1;    
         if (window.innerWidth <= 900) return 2;    
         return 3;                                  
       }
 
-  // Update slider on resize
+  // to update the size of the slider
       window.addEventListener('resize', () => {
         const oldVisible = visibleItems;
         visibleItems = getVisibleItems();
         if (oldVisible !== visibleItems) {
-          index = 0;          // reset to first slide to avoid glitches
+          index = 0;                          
           updateSlider();
         }
       });
