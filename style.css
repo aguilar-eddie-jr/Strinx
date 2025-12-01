@@ -116,8 +116,7 @@ h2 {
   justify-content: flex-end;
 }
 
-.secondlayer-container .nav-menu,
-.sidebar {
+.secondlayer-container .nav-menu, .sidebar {
   display: flex;
   align-items: center;
   list-style: none;
@@ -229,7 +228,7 @@ h2 {
 .heading-button:hover {
   background: #ff6600;
   transform: scale(1.02);
-  color: #1a1a1a;
+  color: #000000;
 }
 
 .main {
@@ -435,7 +434,7 @@ header.section-header a {
   height: 100%;
   z-index: 1;
   text-align: center;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -473,7 +472,7 @@ header.section-header a {
 
 .btn:hover {
   background: #f16000;
-  color: #1a1a1a;
+  color: #000000;
   transform: scale(1.05);
 }
 
@@ -696,6 +695,10 @@ p {
     text-align: center;
     gap: 12px;
     margin: 0 5%;
+  }
+  .logo img {
+    height: 50px;
+    margin: 0;
   }
 
   .searchbar {
