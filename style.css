@@ -115,6 +115,26 @@ h2 {
 .menubutton li {
   justify-content: flex-end;
 }
+.menubutton button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 22px; 
+  color: #1a1a1a;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.menubutton button:hover {
+  color: #ff6600; 
+}
+
+.menubutton button i {
+  font-size: 19px; 
+}
 
 .secondlayer-container .nav-menu, .sidebar {
   display: flex;
@@ -205,7 +225,7 @@ h2 {
   margin: 0;
 }
 
-.headingcontent h3 {
+.headingcontent h2 {
   font-size: 2rem;
   font-weight: 500;
   font-family: "montserrat", sans-serif;
