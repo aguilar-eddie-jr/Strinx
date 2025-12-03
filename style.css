@@ -445,7 +445,7 @@ header.section-header a {
   align-items: center;
   color: #fff;
   background-color: #121212;
-  z-index: -2;
+  z-index: 0;
 }
 
 .merch-img {
@@ -816,3 +816,4 @@ p {
     width: 110px;
   }
 }
+
