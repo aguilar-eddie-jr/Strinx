@@ -66,6 +66,7 @@ h2 {
   background: #eeeeee;
   padding: 8px 12px;
   font-size: 20px;
+  font-weight: 900;
   cursor: pointer;
   border-radius: 0 7px 7px 0;
   transition: 0.2s ease;
@@ -125,7 +126,8 @@ h2 {
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 18px;
+  font-weight: 600;
   color: #1a1a1a;
   padding: 0;
   display: flex;
@@ -134,7 +136,7 @@ h2 {
   transition: color 0.2s ease;
 }
 
-.menubutton button:hover {
+.menubutton button:hover , .sidebar button:hover {
   color: #ff6600;
 }
 
@@ -172,7 +174,7 @@ h2 {
   top: 0;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: 200px;
   z-index: 1001;
   background-color: rgba(255, 255, 255, 0.559);
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
