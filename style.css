@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Inter', 'Open Sans', 'Montserrat', sans-serif;
+  font-family: "Inter", "Open Sans", "Montserrat", sans-serif;
 }
 
 a {
@@ -80,10 +80,10 @@ h2 {
   color: #000000;
   cursor: pointer;
   transition: 0.2s ease;
-  background: none;      
-  border: none;          
-  padding: 0;            
-  display: flex;          
+  background: none;
+  border: none;
+  padding: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -95,7 +95,7 @@ h2 {
 .firstlayer-nav {
   background-color: #ffffff;
   border-bottom: 1px solid #000000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   height: 60px;
 }
 
@@ -121,11 +121,11 @@ h2 {
 .menubutton li {
   justify-content: flex-end;
 }
-.menubutton button {
+.menubutton button, .sidebar button{
   background: none;
   border: none;
   cursor: pointer;
-  font-size: 22px; 
+  font-size: 22px;
   color: #1a1a1a;
   padding: 0;
   display: flex;
@@ -135,14 +135,15 @@ h2 {
 }
 
 .menubutton button:hover {
-  color: #ff6600; 
+  color: #ff6600;
 }
 
 .menubutton button i {
-  font-size: 19px; 
+  font-size: 19px;
 }
 
-.secondlayer-container .nav-menu, .sidebar {
+.secondlayer-container .nav-menu,
+.sidebar {
   display: flex;
   align-items: center;
   list-style: none;
@@ -183,7 +184,8 @@ h2 {
   padding: 20px;
 }
 
-.sidebar li, .sidebar a {
+.sidebar li,
+.sidebar a {
   width: 100%;
 }
 
@@ -203,7 +205,8 @@ h2 {
 
 /* Main Heading Section */
 .mainheading {
-  background: url('./images/openingbikeimage.webp') no-repeat center center/cover;
+  background: url("./images/openingbikeimage.webp") no-repeat center
+    center/cover;
   background-color: #1a1a1a;
   width: 100vw;
   max-width: 100%;
@@ -497,6 +500,7 @@ header.section-header a {
   align-items: center;
   margin: 0 auto;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
 
 .btn:hover {
@@ -573,9 +577,65 @@ p {
   line-height: 1.32;
 }
 
+/*For Page 2*/
+.merchandise-section {
+  margin: 70px 10%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.linksection{
+  display: flex;
+
+}
+.exit {
+  color: #111;
+  margin: 0 7px 15px 0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.exit:hover {
+  color: #ff6600;
+}
+
+.merchcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.item {
+  background-color: #f5f5f5;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+.item p {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.item h3 {
+  font-size: 20px;
+}
+
 /* for responsiveness*/
 
 @media (max-width: 992px) {
+  .merchcontainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .firstlayer-container,
   .secondlayer-container {
     margin: 0 5%;
@@ -704,6 +764,12 @@ p {
 
 /* For Mobile */
 @media (max-width: 505px) {
+  .merchcontainer {
+    grid-template-columns: 1fr;
+  }
+  .item p {
+    font-size: 16px;
+  }
   h2 {
     font-size: 1.5rem;
   }
@@ -816,4 +882,3 @@ p {
     width: 110px;
   }
 }
-
