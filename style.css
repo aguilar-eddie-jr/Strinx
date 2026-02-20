@@ -122,7 +122,8 @@ h2 {
 .menubutton li {
   justify-content: flex-end;
 }
-.menubutton button, .sidebar button{
+.menubutton button,
+.sidebar button {
   background: none;
   border: none;
   cursor: pointer;
@@ -136,7 +137,8 @@ h2 {
   transition: color 0.2s ease;
 }
 
-.menubutton button:hover , .sidebar button:hover {
+.menubutton button:hover,
+.sidebar button:hover {
   color: #ff6600;
 }
 
@@ -588,9 +590,8 @@ p {
   justify-content: center;
   flex-direction: column;
 }
-.linksection{
+.linksection {
   display: flex;
-
 }
 .exit {
   color: #111;
@@ -630,6 +631,123 @@ p {
 
 .item h3 {
   font-size: 20px;
+}
+
+/* PAGE 3*/
+
+.itemwrapper {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 40px;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+.itemimage {
+  flex: 1.2;
+  background: #eaeaea;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemimage img {
+  width: 100%;
+  max-width: 650px;
+  height: 100%;
+}
+
+.iteminfo {
+  flex: 0.8;
+  padding-top: 10px;
+}
+
+.itemtitle {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.itemprice {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.sizeselect {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  padding: 0 14px;
+  font-size: 14px;
+  margin-bottom: 25px;
+  background: #fff;
+}
+
+.quantitywrapper {
+  margin-bottom: 25px;
+}
+
+.quantitybox {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 40px;
+}
+
+.qtybtn {
+  width: 40px;
+  height: 40px;
+  background: #f5f5f5;
+  border: none;
+  font-size: 18px;
+  color: #111;
+}
+
+.quantityinput {
+  width: 60px;
+  height: 40px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: #fff;
+}
+
+.btnpurchase {
+  background: #ff6600;
+  border: none;
+  color: #fff;
+  width: 100%;
+  height: 48px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid #aaa;
+}
+
+
+@media (max-width: 900px) {
+  .itemwrapper {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .itemimage {
+    padding: 20px;
+  }
 }
 
 /* for responsiveness*/
