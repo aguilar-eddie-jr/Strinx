@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Official Strinx Brand bike shop">
+    <link rel="apple-touch-icon" sizes="57x57" href="./Logo/StrinxLogo57x57.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./Logo/StrinxLogo96x96.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./Logo/StrinxLogo32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./Logo/StrinxLogo16x16.png" />
+
+    <title>Strinx</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+  <body>
+    <aside class="topnav" aria-label="Promotional banner">
+      SHIPPING NATIONWIDE | 2025 YEAR END SALE NOW | FREE DELIVERY FOR OVER
+      ₱5000
+    </aside>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <div class="firstlayer-nav">
+        <div class="firstlayer-container">
+          <div class="logo">
+            <a href="../index.html">
+              <img src="../images/strinx-offial-logo.svg" alt="STRINX logo" />
+            </a>
+          </div>
+
+          <div class="rightpart">
+            <form class="searchbar" action="#" method="get" role="search">
+              <input
+                type="text"
+                placeholder="Search Products …"
+                autocomplete="off"
+                aria-label="Search products"
+              />
+              <button
+                class="fa fa-search"
+                type="submit"
+                aria-label="Submit search"
+              ></button>
+            </form>
+
+            <button class="login" aria-label="Login">
+              <i class="fa fa-user-circle"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondlayer-nav">
+        <div class="secondlayer-container">
+          <ul class="nav-menu" role="menubar">
+            <li class="hideOnMobile" role="menuitem">
+              <a href="#" role="menuitem">FIXIE BIKES</a>
+            </li>
+            <li class="hideOnMobile" role="menuitem">
+              <a href="#" role="menuitem">ROAD BIKES</a>
+            </li>
+            <li class="hideOnMobile" role="menuitem">
+              <a href="#" role="menuitem">MOUNTAIN BIKES</a>
+            </li>
+            <li class="hideOnMobile" role="menuitem">
+              <a href="../page2.html" role="menuitem">MERCHANDISE</a>
+            </li>
+            <li class="hideOnMobile" role="menuitem">
+              <a href="#support" role="menuitem">SUPPORT</a>
+            </li>
+            <li class="menubutton" role="menuitem">
+              <button onclick="showSidebar()" aria-label="Open mobile menu">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </li>
+          </ul>
+
+          <ul class="sidebar" role="menu" aria-label="Mobile menu">
+            <li role="menuitem">
+              <button onclick="hideSidebar()">CLOSE MENU</button>
+            </li>
+            <li role="menuitem"><a href="#">FIXIE BIKES</a></li>
+            <li role="menuitem"><a href="#">ROAD BIKES</a></li>
+            <li role="menuitem"><a href="#">MOUNTAIN BIKES</a></li>
+            <li role="menuitem"><a href="../page2.html">MERCHANDISE</a></li>
+            <li role="menuitem"><a href="#support">SUPPORT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="itemwrapper">
+      <!-- item Image -->
+      <figure class="itemimage">
+        <img
+          src="../bikesimage/1stbikeFxd.webp"
+          alt="Bianchi Methanol CV FS 9.3"
+        />
+      </figure>
+
+      <!-- item Information -->
+      <article class="iteminfo">
+        <header>
+          <h1 class="itemtitle">
+            BMC Trackmachine AL ONE | Black/ white
+          </h1>
+
+          <p class="itemprice">₱150,499 PHP</p>
+        </header>
+
+        <!-- item Form -->
+        <form>
+          <section>
+            <label class="label" for="size">Size</label>
+            <select id="size" class="sizeselect" name="size">
+              <option>Pick your size</option>
+              <option>Small</option>
+              <option>Medium</option>
+              <option>Large</option>
+            </select>
+          </section>
+
+          <section class="quantitywrapper">
+            <label class="label" for="quantity">Quantity</label>
+
+            <div class="quantitybox">
+              <button type="button" class="qtybtn" disabled>−</button>
+
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                class="quantityinput"
+                value="0"
+                min="0"
+                step="1"
+              />
+
+              <button type="button" class="qtybtn" disabled>+</button>
+            </div>
+          </section>
+
+          <section>
+
+            <button type="submit" class="btnpurchase">Purchase</button>
+          </section>
+        </form>
+      </article>
+    </main>
+
+    <!-- For FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <article id="support" aria-labelledby="support-title">
+          <h2 id="support-title">Support</h2>
+          <p>
+            Need help with merch or brand updates? We've got you. Reach<br />
+            out through our socials, we're always here for the crew.
+          </p>
+        </article>
+
+        <article aria-labelledby="contact-title">
+          <h2 id="contact-title">Send us a message</h2>
+          <p>
+            Email:
+            <a href="mailto:aguilareddie2323@gmail.com"
+              >aguilareddie2323@gmail.com</a
+            ><br />
+            Tel: <a href="tel:+09947420066">0994-742-0066</a>
+          </p>
+        </article>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          © Copyright 2025, Strinx Bikes. All rights reserved | Powered by
+          Aguilar Jr. Eddie P.
+        </p>
+
+        <address class="store">
+          <img src="../images/MainLOGOSwhite.svg" alt="Strinx Logo" />
+          <p>
+            Shop Location: Jade Residences BLK<br />
+            1B LOT 33 Florence St, Malagasang<br />
+            1-D, Imus, Cavite
+          </p>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
