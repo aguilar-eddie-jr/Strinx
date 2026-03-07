@@ -383,6 +383,9 @@ header.section-header a {
   cursor: pointer;
   z-index: 10;
   transition: all 0.2s ease;
+
+  display: inline-flex; /* prevents stretching */
+  flex-shrink: 0;
 }
 
 .arrow:hover {
@@ -397,7 +400,6 @@ header.section-header a {
 .arrow.right {
   right: 0;
 }
-
 @media (max-width: 900px) {
   .product {
     flex: 0 0 48%;
@@ -409,9 +411,9 @@ header.section-header a {
   }
 
   .arrow {
-    width: 40px;
-    height: 40px;
-    font-size: 28px;
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
   }
 }
 
@@ -860,11 +862,6 @@ input {
     flex-direction: column;
     gap: 30px;
     padding: 25px;
-  }
-
-  .left,
-  .right {
-    width: 100%;
   }
 
   .form-row {
